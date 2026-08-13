@@ -1,0 +1,36 @@
+{
+  "annualized_capital_cost_eur": 1778680671.528393,
+  "battery_charging_mwh": 118099.07583304864,
+  "battery_discharging_mwh": 106514.12523637968,
+  "co2_emissions_tonnes": 5868767.500174836,
+  "cost_reconciliation_difference_eur": 0.0003027915954589844,
+  "description": "Electrification stress test with annual hourly demand scaled 30 percent above the baseline.",
+  "generation_mwh": {
+    "gas": 5843773.086920557,
+    "imports": 20680605.672103107,
+    "load_shedding": 175.8196999999982,
+    "nuclear": 16479074.469301827,
+    "solar": 16228170.74340997,
+    "wind": 26189785.202061214
+  },
+  "imports_mwh": 20680605.672103107,
+  "installed_capacity_mw": {
+    "battery": 112.58040000000119,
+    "gas": 4500.0,
+    "imports": 3500.0,
+    "nuclear": 2400.0,
+    "solar": 11159.942318698048,
+    "wind": 10000.0
+  },
+  "operating_cost_eur": 2616026558.503591,
+  "optimization_status": "ok",
+  "renewable_curtailment_mwh": {
+    "solar": 54447.90505214222,
+    "wind": 978686.7779387869
+  },
+  "scenario": "High electricity demand",
+  "slug": "high-demand",
+  "termination_condition": "optimal",
+  "total_annualized_system_cost_eur": 4394707230.032287,
+  "unserved_energy_mwh": 175.8196999999982
+}

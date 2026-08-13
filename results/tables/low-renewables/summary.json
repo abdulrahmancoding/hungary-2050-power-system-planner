@@ -1,0 +1,36 @@
+{
+  "annualized_capital_cost_eur": 1681857166.9903677,
+  "battery_charging_mwh": 65966.19357339456,
+  "battery_discharging_mwh": 59490.930256184714,
+  "co2_emissions_tonnes": 4085015.844585824,
+  "cost_reconciliation_difference_eur": -7.62939453125e-06,
+  "description": "Climate-stress sensitivity with wind and solar capacity factors reduced by 35 percent in every hour.",
+  "generation_mwh": {
+    "gas": 1506483.2062555198,
+    "imports": 19620698.049076647,
+    "load_shedding": 0.0,
+    "nuclear": 18015921.968576718,
+    "solar": 8938035.522376668,
+    "wind": 17625336.55003166
+  },
+  "imports_mwh": 19620698.049076647,
+  "installed_capacity_mw": {
+    "battery": 100.0,
+    "gas": 4500.0,
+    "imports": 3500.0,
+    "nuclear": 2400.0,
+    "solar": 9424.675763461231,
+    "wind": 10000.0
+  },
+  "operating_cost_eur": 2125229283.5643494,
+  "optimization_status": "ok",
+  "renewable_curtailment_mwh": {
+    "solar": 0.0,
+    "wind": 34170.236968342215
+  },
+  "scenario": "Low wind and solar availability",
+  "slug": "low-renewables",
+  "termination_condition": "optimal",
+  "total_annualized_system_cost_eur": 3807086450.5547094,
+  "unserved_energy_mwh": 0.0
+}

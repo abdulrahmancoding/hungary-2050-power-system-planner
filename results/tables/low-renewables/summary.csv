@@ -1,0 +1,29 @@
+metric,technology,value
+scenario,,Low wind and solar availability
+slug,,low-renewables
+description,,Climate-stress sensitivity with wind and solar capacity factors reduced by 35 percent in every hour.
+optimization_status,,ok
+termination_condition,,optimal
+total_annualized_system_cost_eur,,3807086450.5547094
+annualized_capital_cost_eur,,1681857166.9903677
+operating_cost_eur,,2125229283.5643494
+cost_reconciliation_difference_eur,,-7.62939453125e-06
+co2_emissions_tonnes,,4085015.844585824
+installed_capacity_mw,solar,9424.675763461231
+installed_capacity_mw,wind,10000.0
+installed_capacity_mw,nuclear,2400.0
+installed_capacity_mw,gas,4500.0
+installed_capacity_mw,imports,3500.0
+installed_capacity_mw,battery,100.0
+generation_mwh,solar,8938035.522376668
+generation_mwh,wind,17625336.55003166
+generation_mwh,nuclear,18015921.968576718
+generation_mwh,gas,1506483.2062555198
+generation_mwh,imports,19620698.049076647
+generation_mwh,load_shedding,0.0
+battery_charging_mwh,,65966.19357339456
+battery_discharging_mwh,,59490.930256184714
+imports_mwh,,19620698.049076647
+renewable_curtailment_mwh,solar,0.0
+renewable_curtailment_mwh,wind,34170.236968342215
+unserved_energy_mwh,,0.0

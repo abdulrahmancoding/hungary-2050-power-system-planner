@@ -32,3 +32,14 @@ def test_low_carbon_constraint_is_respected(short_profiles, baseline_scenario) -
     results = calculate_results(network, baseline_scenario, condition, termination)
     assert results["co2_emissions_tonnes"] <= 1_000_000 + 1e-6
 
+
+def test_result_energy_balance(short_profiles, baseline_scenario) -> None:
+    network = build_network(short_profiles, baseline_scenario)
+    condition, termination = optimize_network(network)
+    results = calculate_results(network, baseline_scenario, condition, termination)
+    supplied = sum(results["generation_mwh"].values()) + results["battery_discharging_mwh"]
+    consumed = (
+        float(network.loads_t.p_set["electricity_demand"].sum())
+        + results["battery_charging_mwh"]
+    )
+    assert supplied == pytest.approx(consumed, abs=0.01)

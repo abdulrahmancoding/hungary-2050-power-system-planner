@@ -1,0 +1,36 @@
+{
+  "annualized_capital_cost_eur": 1502364113.192099,
+  "battery_charging_mwh": 114688.59110796961,
+  "battery_discharging_mwh": 103428.70222227024,
+  "co2_emissions_tonnes": 2599534.9068386992,
+  "cost_reconciliation_difference_eur": -2.4080276489257812e-05,
+  "description": "Reliability stress test with 75 percent of nuclear output unavailable for a two-week winter period.",
+  "generation_mwh": {
+    "gas": 608036.249283713,
+    "imports": 13201220.973797722,
+    "load_shedding": 0.0,
+    "nuclear": 16065621.470251184,
+    "solar": 8989285.837423168,
+    "wind": 26847095.39112992
+  },
+  "imports_mwh": 13201220.973797722,
+  "installed_capacity_mw": {
+    "battery": 100.0,
+    "gas": 4500.0,
+    "imports": 3500.0,
+    "nuclear": 2400.0,
+    "solar": 6161.165694401802,
+    "wind": 10000.0
+  },
+  "operating_cost_eur": 1438764217.6689842,
+  "optimization_status": "ok",
+  "renewable_curtailment_mwh": {
+    "solar": 0.0,
+    "wind": 321376.58887008205
+  },
+  "scenario": "Major generator outage",
+  "slug": "major-outage",
+  "termination_condition": "optimal",
+  "total_annualized_system_cost_eur": 2941128330.861059,
+  "unserved_energy_mwh": 0.0
+}

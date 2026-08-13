@@ -1,0 +1,36 @@
+{
+  "annualized_capital_cost_eur": 1503873110.0185237,
+  "battery_charging_mwh": 117859.26135160448,
+  "battery_discharging_mwh": 106308.09882563823,
+  "co2_emissions_tonnes": 3763951.4811767377,
+  "cost_reconciliation_difference_eur": 4.267692565917969e-05,
+  "description": "Energy-security sensitivity with firm import capacity restricted to 1 GW.",
+  "generation_mwh": {
+    "gas": 7337910.469120294,
+    "imports": 5938539.392776832,
+    "load_shedding": 68.7709999999995,
+    "nuclear": 16566391.03107297,
+    "solar": 9029316.05387989,
+    "wind": 26839325.47767598
+  },
+  "imports_mwh": 5938539.392776832,
+  "installed_capacity_mw": {
+    "battery": 100.0,
+    "gas": 4500.0,
+    "imports": 1000.0,
+    "nuclear": 2400.0,
+    "solar": 6188.602000336795,
+    "wind": 10000.0
+  },
+  "operating_cost_eur": 1431160750.388044,
+  "optimization_status": "ok",
+  "renewable_curtailment_mwh": {
+    "solar": 0.0,
+    "wind": 329146.5023240186
+  },
+  "scenario": "Limited import capacity",
+  "slug": "limited-imports",
+  "termination_condition": "optimal",
+  "total_annualized_system_cost_eur": 2935033860.4066105,
+  "unserved_energy_mwh": 68.7709999999995
+}

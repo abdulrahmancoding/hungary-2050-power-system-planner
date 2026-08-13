@@ -1,0 +1,29 @@
+metric,technology,value
+scenario,,Major generator outage
+slug,,major-outage
+description,,Reliability stress test with 75 percent of nuclear output unavailable for a two-week winter period.
+optimization_status,,ok
+termination_condition,,optimal
+total_annualized_system_cost_eur,,2941128330.861059
+annualized_capital_cost_eur,,1502364113.192099
+operating_cost_eur,,1438764217.6689842
+cost_reconciliation_difference_eur,,-2.4080276489257812e-05
+co2_emissions_tonnes,,2599534.9068386992
+installed_capacity_mw,solar,6161.165694401802
+installed_capacity_mw,wind,10000.0
+installed_capacity_mw,nuclear,2400.0
+installed_capacity_mw,gas,4500.0
+installed_capacity_mw,imports,3500.0
+installed_capacity_mw,battery,100.0
+generation_mwh,solar,8989285.837423168
+generation_mwh,wind,26847095.39112992
+generation_mwh,nuclear,16065621.470251184
+generation_mwh,gas,608036.249283713
+generation_mwh,imports,13201220.973797722
+generation_mwh,load_shedding,0.0
+battery_charging_mwh,,114688.59110796961
+battery_discharging_mwh,,103428.70222227024
+imports_mwh,,13201220.973797722
+renewable_curtailment_mwh,solar,0.0
+renewable_curtailment_mwh,wind,321376.58887008205
+unserved_energy_mwh,,0.0

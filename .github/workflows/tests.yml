@@ -1,0 +1,45 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install project
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev]"
+          python -m pip check
+
+      - name: Verify deterministic data preparation
+        shell: bash
+        run: |
+          cp data/processed/hourly_profiles.csv "$RUNNER_TEMP/hourly_profiles.csv"
+          python -m hungary2050 prepare-data
+          cmp data/processed/hourly_profiles.csv "$RUNNER_TEMP/hourly_profiles.csv"
+
+      - name: Run tests
+        run: python -m pytest -q
+
+      - name: Run 48-hour optimization smoke test
+        run: python -m hungary2050 run scenarios/01_baseline.yaml --hours 48
+

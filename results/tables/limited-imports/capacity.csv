@@ -1,7 +1,7 @@
 technology,capacity_mw
-solar,6083.508963631175
+solar,6188.602000336795
 wind,10000.0
 nuclear,2400.0
 gas,4500.0
-imports,3500.0
+imports,1000.0
 battery,100.0

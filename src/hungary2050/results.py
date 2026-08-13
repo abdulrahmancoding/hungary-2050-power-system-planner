@@ -136,9 +136,9 @@ def export_results(
 
     output = Path(output_directory) / str(metrics["slug"])
     output.mkdir(parents=True, exist_ok=True)
-    (output / "summary.json").write_text(
-        json.dumps(metrics, indent=2, sort_keys=True) + "\n", encoding="utf-8"
-    )
+    with (output / "summary.json").open("w", encoding="utf-8", newline="\n") as handle:
+        json.dump(metrics, handle, indent=2, sort_keys=True)
+        handle.write("\n")
     _flatten_results(metrics).to_csv(output / "summary.csv", index=False, lineterminator="\n")
 
     pd.Series(metrics["installed_capacity_mw"], name="capacity_mw").rename_axis("technology").to_csv(
@@ -209,7 +209,7 @@ def create_comparison_charts(
     axes[0].set_ylabel("Annual system cost (billion EUR)")
     axes[0].set_title("Optimized annualized system cost")
     axes[1].bar(x, comparison["co2_emissions_mt"], color="#6A994E")
-    axes[1].set_ylabel("Operational CO₂ (Mt)")
+    axes[1].set_ylabel("Operational CO2 (Mt)")
     axes[1].set_title("Modelled operational emissions")
     for axis in axes:
         axis.set_xticks(x, labels, rotation=25, ha="right")
@@ -245,6 +245,24 @@ def create_comparison_charts(
     axis.tick_params(axis="x", rotation=25)
     axis.legend(title="Source", ncol=3)
     path = figures / "generation_mix.png"
+    fig.savefig(path, dpi=180)
+    plt.close(fig)
+    paths.append(path)
+
+    fig, axes = plt.subplots(1, 3, figsize=(15, 5.5), constrained_layout=True)
+    axes[0].bar(x, comparison["imports_twh"], color=COLORS["imports"])
+    axes[0].set_ylabel("Imports (TWh)")
+    axes[0].set_title("Annual imports")
+    axes[1].bar(x, comparison["curtailment_twh"], color="#7CB342")
+    axes[1].set_ylabel("Curtailment (TWh)")
+    axes[1].set_title("Renewable curtailment")
+    axes[2].bar(x, comparison["unserved_energy_gwh"] * 1000, color=COLORS["load_shedding"])
+    axes[2].set_ylabel("Unserved energy (MWh)")
+    axes[2].set_title("Reliability shortfall")
+    for axis in axes:
+        axis.set_xticks(x, labels, rotation=28, ha="right")
+    fig.suptitle("Security and flexibility indicators — synthetic demonstration study", fontsize=14)
+    path = figures / "security_and_flexibility.png"
     fig.savefig(path, dpi=180)
     plt.close(fig)
     paths.append(path)

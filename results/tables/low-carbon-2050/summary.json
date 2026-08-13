@@ -1,0 +1,36 @@
+{
+  "annualized_capital_cost_eur": 2121289692.3292623,
+  "battery_charging_mwh": 1913918.3289072076,
+  "battery_discharging_mwh": 1725956.8506492209,
+  "co2_emissions_tonnes": 999999.9999999997,
+  "cost_reconciliation_difference_eur": -6.878376007080078e-05,
+  "description": "Tight operational CO2 budget tests renewable and storage investment under deep decarbonization.",
+  "generation_mwh": {
+    "gas": 9299.127197804508,
+    "imports": 5536581.578848923,
+    "load_shedding": 0.0,
+    "nuclear": 12674049.632351771,
+    "solar": 11106386.844507266,
+    "wind": 36561644.32835223
+  },
+  "imports_mwh": 5536581.578848923,
+  "installed_capacity_mw": {
+    "battery": 1545.89567152098,
+    "gas": 4500.0,
+    "imports": 3500.0,
+    "nuclear": 2400.0,
+    "solar": 7613.475790217351,
+    "wind": 14000.0
+  },
+  "operating_cost_eur": 652990311.6190649,
+  "optimization_status": "ok",
+  "renewable_curtailment_mwh": {
+    "solar": 1853.623161232099,
+    "wind": 1474216.443647772
+  },
+  "scenario": "Low-carbon 2050",
+  "slug": "low-carbon-2050",
+  "termination_condition": "optimal",
+  "total_annualized_system_cost_eur": 2774280003.9482584,
+  "unserved_energy_mwh": 0.0
+}

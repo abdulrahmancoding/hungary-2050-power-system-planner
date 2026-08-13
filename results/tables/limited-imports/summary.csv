@@ -1,0 +1,29 @@
+metric,technology,value
+scenario,,Limited import capacity
+slug,,limited-imports
+description,,Energy-security sensitivity with firm import capacity restricted to 1 GW.
+optimization_status,,ok
+termination_condition,,optimal
+total_annualized_system_cost_eur,,2935033860.4066105
+annualized_capital_cost_eur,,1503873110.0185237
+operating_cost_eur,,1431160750.388044
+cost_reconciliation_difference_eur,,4.267692565917969e-05
+co2_emissions_tonnes,,3763951.4811767377
+installed_capacity_mw,solar,6188.602000336795
+installed_capacity_mw,wind,10000.0
+installed_capacity_mw,nuclear,2400.0
+installed_capacity_mw,gas,4500.0
+installed_capacity_mw,imports,1000.0
+installed_capacity_mw,battery,100.0
+generation_mwh,solar,9029316.05387989
+generation_mwh,wind,26839325.47767598
+generation_mwh,nuclear,16566391.03107297
+generation_mwh,gas,7337910.469120294
+generation_mwh,imports,5938539.392776832
+generation_mwh,load_shedding,68.7709999999995
+battery_charging_mwh,,117859.26135160448
+battery_discharging_mwh,,106308.09882563823
+imports_mwh,,5938539.392776832
+renewable_curtailment_mwh,solar,0.0
+renewable_curtailment_mwh,wind,329146.5023240186
+unserved_energy_mwh,,68.7709999999995

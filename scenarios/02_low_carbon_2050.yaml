@@ -4,7 +4,7 @@ scenario:
   description: Tight operational CO2 budget tests renewable and storage investment under deep decarbonization.
 
 model:
-  co2_cap_tonnes: 2000000
+  co2_cap_tonnes: 1000000
 
 technologies:
   solar:
@@ -13,4 +13,3 @@ technologies:
     max_capacity_mw: 14000
   battery:
     max_capacity_mw: 8000
-

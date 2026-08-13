@@ -1,0 +1,29 @@
+metric,technology,value
+scenario,,Low-carbon 2050
+slug,,low-carbon-2050
+description,,Tight operational CO2 budget tests renewable and storage investment under deep decarbonization.
+optimization_status,,ok
+termination_condition,,optimal
+total_annualized_system_cost_eur,,2774280003.9482584
+annualized_capital_cost_eur,,2121289692.3292623
+operating_cost_eur,,652990311.6190649
+cost_reconciliation_difference_eur,,-6.878376007080078e-05
+co2_emissions_tonnes,,999999.9999999997
+installed_capacity_mw,solar,7613.475790217351
+installed_capacity_mw,wind,14000.0
+installed_capacity_mw,nuclear,2400.0
+installed_capacity_mw,gas,4500.0
+installed_capacity_mw,imports,3500.0
+installed_capacity_mw,battery,1545.89567152098
+generation_mwh,solar,11106386.844507266
+generation_mwh,wind,36561644.32835223
+generation_mwh,nuclear,12674049.632351771
+generation_mwh,gas,9299.127197804508
+generation_mwh,imports,5536581.578848923
+generation_mwh,load_shedding,0.0
+battery_charging_mwh,,1913918.3289072076
+battery_discharging_mwh,,1725956.8506492209
+imports_mwh,,5536581.578848923
+renewable_curtailment_mwh,solar,1853.623161232099
+renewable_curtailment_mwh,wind,1474216.443647772
+unserved_energy_mwh,,0.0

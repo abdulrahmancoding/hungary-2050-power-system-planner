@@ -1,0 +1,29 @@
+metric,technology,value
+scenario,,High electricity demand
+slug,,high-demand
+description,,Electrification stress test with annual hourly demand scaled 30 percent above the baseline.
+optimization_status,,ok
+termination_condition,,optimal
+total_annualized_system_cost_eur,,4394707230.032287
+annualized_capital_cost_eur,,1778680671.528393
+operating_cost_eur,,2616026558.503591
+cost_reconciliation_difference_eur,,0.0003027915954589844
+co2_emissions_tonnes,,5868767.500174836
+installed_capacity_mw,solar,11159.942318698048
+installed_capacity_mw,wind,10000.0
+installed_capacity_mw,nuclear,2400.0
+installed_capacity_mw,gas,4500.0
+installed_capacity_mw,imports,3500.0
+installed_capacity_mw,battery,112.58040000000119
+generation_mwh,solar,16228170.74340997
+generation_mwh,wind,26189785.202061214
+generation_mwh,nuclear,16479074.469301827
+generation_mwh,gas,5843773.086920557
+generation_mwh,imports,20680605.672103107
+generation_mwh,load_shedding,175.8196999999982
+battery_charging_mwh,,118099.07583304864
+battery_discharging_mwh,,106514.12523637968
+imports_mwh,,20680605.672103107
+renewable_curtailment_mwh,solar,54447.90505214222
+renewable_curtailment_mwh,wind,978686.7779387869
+unserved_energy_mwh,,175.8196999999982
