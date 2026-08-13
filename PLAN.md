@@ -12,7 +12,7 @@ This file tracks the delivery milestones and a concise progress log. Status labe
 | 4 | Implement all six configurable scenarios and result exports | Complete | Each scenario writes validated tables and metrics |
 | 5 | Add tests, documentation, sources, assumptions, charts, and CI | Complete | Fast test suite, reproducible commands, and professional comparison figures exist |
 | 6 | Perform final verification and local Git history | Complete | Scenarios/tests pass; secret, cache, and large-file audits are clean; meaningful commits exist on `main` |
-| 7 | Publish only after explicit user approval | Pending | Public GitHub repository, About metadata/topics, pushed `main`, passing Actions, and final URL |
+| 7 | Publish only after explicit user approval | Complete | Public GitHub repository, About metadata/topics, pushed `main`, passing Actions, and final URL |
 
 ## Progress log
 
@@ -29,6 +29,8 @@ This file tracks the delivery milestones and a concise progress log. Status labe
 - 2026-08-13: Final post-cleanup annual run: all six scenarios `ok` / `optimal`; final test result: 11 passed.
 - 2026-08-13: Added the author's requested name, BME student affiliation, and Infocommunication specialization to package metadata and README; no private contact details added.
 - 2026-08-13: Authenticated GitHub CLI as `abdulrahmancoding`; prepared account-specific repository URLs and GitHub no-reply commit identity. Publication remains approval-gated.
+- 2026-08-14: After explicit approval, created the public repository, pushed `main`, applied the approved description and 14 topics, and verified the initial GitHub Actions run passed all steps.
+- 2026-08-14: Updated GitHub-maintained actions to current Node.js 24-based majors (`checkout@v7`, `setup-python@v7`) after the initial run's deprecation annotation.
 
 ## Release gate
 
