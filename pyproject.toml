@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11,<3.14"
 license = {text = "MIT"}
 authors = [
-  {name = "Project author"}
+  {name = "Abdul Rahman Khaldoun Hasan Abuzeid"}
 ]
 keywords = ["energy-system", "capacity-expansion", "pypsa", "highs", "hungary", "optimization"]
 classifiers = [
@@ -20,6 +20,7 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
   "Topic :: Scientific/Engineering",
 ]
+
 dependencies = [
   "highspy==1.15.1",
   "matplotlib==3.11.1",
@@ -37,6 +38,10 @@ dev = [
 
 [project.scripts]
 hungary2050 = "hungary2050.cli:main"
+
+[project.urls]
+Repository = "https://github.com/abdulrahmancoding/hungary-2050-power-system-planner"
+Issues = "https://github.com/abdulrahmancoding/hungary-2050-power-system-planner/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -1,5 +1,6 @@
 # Hungary 2050 Power System Planner
 
+[![Tests](https://github.com/abdulrahmancoding/hungary-2050-power-system-planner/actions/workflows/tests.yml/badge.svg)](https://github.com/abdulrahmancoding/hungary-2050-power-system-planner/actions/workflows/tests.yml)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB.svg)](https://www.python.org/)
 [![PyPSA](https://img.shields.io/badge/model-PyPSA-3B7EA1.svg)](https://pypsa.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -14,6 +15,16 @@ testing.
 > policy recommendation. The hourly input is deterministic and synthetic. Every
 > capacity, cost, limit, and scenario setting is a modelling assumption unless
 > explicitly identified as source-derived in [SOURCES.md](SOURCES.md).
+
+## Author
+
+**Abdul Rahman Khaldoun Hasan Abuzeid**
+
+BSc Computer Science Engineering student at Budapest University of Technology
+and Economics (BME), specializing in Infocommunication.
+
+This project was developed as a technical portfolio study. The author does not
+claim prior professional energy-sector experience.
 
 ## What the model does
 
@@ -115,7 +126,7 @@ Prerequisites: Python 3.11-3.13 and Git. A separate HiGHS executable is not
 needed because the pinned `highspy` wheel provides the solver interface.
 
 ```powershell
-git clone https://github.com/YOUR-ACCOUNT/hungary-2050-power-system-planner.git
+git clone https://github.com/abdulrahmancoding/hungary-2050-power-system-planner.git
 Set-Location "hungary-2050-power-system-planner"
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install --upgrade pip
