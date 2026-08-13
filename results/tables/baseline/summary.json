@@ -1,0 +1,36 @@
+{
+  "annualized_capital_cost_eur": 481000000.0,
+  "battery_charging_mwh": 0.0,
+  "battery_discharging_mwh": 0.0,
+  "co2_emissions_tonnes": 67906.64306,
+  "cost_reconciliation_difference_eur": -1.2665987014770508e-07,
+  "description": "Reference planning case using the shared synthetic demand and renewable profiles.",
+  "generation_mwh": {
+    "gas": 102557.6915,
+    "imports": 168000.0,
+    "load_shedding": 0.0,
+    "nuclear": 103680.0,
+    "solar": 15775.456,
+    "wind": 11233.6615
+  },
+  "imports_mwh": 168000.0,
+  "installed_capacity_mw": {
+    "battery": 100.0,
+    "gas": 4500.0,
+    "imports": 3500.0,
+    "nuclear": 2400.0,
+    "solar": 4000.0,
+    "wind": 500.0
+  },
+  "operating_cost_eur": 26107140.692500003,
+  "optimization_status": "ok",
+  "renewable_curtailment_mwh": {
+    "solar": 0.0,
+    "wind": 0.0
+  },
+  "scenario": "Baseline",
+  "slug": "baseline",
+  "termination_condition": "optimal",
+  "total_annualized_system_cost_eur": 507107140.6924999,
+  "unserved_energy_mwh": 0.0
+}

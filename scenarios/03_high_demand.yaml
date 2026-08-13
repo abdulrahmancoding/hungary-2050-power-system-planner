@@ -1,0 +1,8 @@
+scenario:
+  name: High electricity demand
+  slug: high-demand
+  description: Electrification stress test with annual hourly demand scaled 30 percent above the baseline.
+
+model:
+  demand_multiplier: 1.30
+

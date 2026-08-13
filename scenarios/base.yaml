@@ -1,0 +1,70 @@
+# Shared modelling assumptions. Every numeric value in this file is a modelling
+# assumption unless SOURCES.md explicitly states otherwise.
+model:
+  demand_multiplier: 1.0
+  solar_availability_multiplier: 1.0
+  wind_availability_multiplier: 1.0
+  co2_cap_tonnes: null
+  outage: null
+
+data:
+  path: data/processed/hourly_profiles.csv
+
+technologies:
+  solar:
+    existing_capacity_mw: 4000
+    max_capacity_mw: 14000
+    extendable: true
+    capital_cost_eur_per_mw_year: 55000
+    marginal_cost_eur_per_mwh: 0
+    efficiency: 1.0
+  wind:
+    existing_capacity_mw: 500
+    max_capacity_mw: 10000
+    extendable: true
+    capital_cost_eur_per_mw_year: 95000
+    marginal_cost_eur_per_mwh: 0
+    efficiency: 1.0
+  nuclear:
+    existing_capacity_mw: 2400
+    max_capacity_mw: 2400
+    extendable: false
+    capital_cost_eur_per_mw_year: 0
+    marginal_cost_eur_per_mwh: 12
+    efficiency: 1.0
+    availability: 0.90
+  gas:
+    existing_capacity_mw: 4500
+    max_capacity_mw: 8000
+    extendable: true
+    capital_cost_eur_per_mw_year: 45000
+    marginal_cost_eur_per_mwh: 95
+    efficiency: 0.55
+    availability: 0.95
+    co2_emissions_t_per_mwh_thermal: 0.202
+  battery:
+    existing_capacity_mw: 100
+    max_capacity_mw: 6000
+    extendable: true
+    duration_hours: 4
+    efficiency_store: 0.95
+    efficiency_dispatch: 0.95
+    standing_loss_per_hour: 0.0001
+    capital_cost_eur_per_mw_year: 110000
+    marginal_cost_eur_per_mwh: 1
+  imports:
+    existing_capacity_mw: 3500
+    max_capacity_mw: 3500
+    extendable: false
+    capital_cost_eur_per_mw_year: 0
+    marginal_cost_eur_per_mwh: 90
+    efficiency: 1.0
+    co2_emissions_t_per_mwh: 0.180
+  load_shedding:
+    existing_capacity_mw: 20000
+    max_capacity_mw: 20000
+    extendable: false
+    capital_cost_eur_per_mw_year: 0
+    marginal_cost_eur_per_mwh: 10000
+    efficiency: 1.0
+

@@ -1,0 +1,5 @@
+scenario:
+  name: Baseline
+  slug: baseline
+  description: Reference planning case using the shared synthetic demand and renewable profiles.
+

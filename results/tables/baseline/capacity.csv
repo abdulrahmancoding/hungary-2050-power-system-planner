@@ -1,0 +1,7 @@
+technology,capacity_mw
+solar,4000.0
+wind,500.0
+nuclear,2400.0
+gas,4500.0
+imports,3500.0
+battery,100.0

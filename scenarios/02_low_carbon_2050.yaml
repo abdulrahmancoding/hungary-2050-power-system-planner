@@ -1,0 +1,16 @@
+scenario:
+  name: Low-carbon 2050
+  slug: low-carbon-2050
+  description: Tight operational CO2 budget tests renewable and storage investment under deep decarbonization.
+
+model:
+  co2_cap_tonnes: 2000000
+
+technologies:
+  solar:
+    max_capacity_mw: 18000
+  wind:
+    max_capacity_mw: 14000
+  battery:
+    max_capacity_mw: 8000
+

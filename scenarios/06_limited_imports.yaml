@@ -1,0 +1,10 @@
+scenario:
+  name: Limited import capacity
+  slug: limited-imports
+  description: Energy-security sensitivity with firm import capacity restricted to 1 GW.
+
+technologies:
+  imports:
+    existing_capacity_mw: 1000
+    max_capacity_mw: 1000
+

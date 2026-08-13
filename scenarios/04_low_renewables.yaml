@@ -1,0 +1,9 @@
+scenario:
+  name: Low wind and solar availability
+  slug: low-renewables
+  description: Climate-stress sensitivity with wind and solar capacity factors reduced by 35 percent in every hour.
+
+model:
+  solar_availability_multiplier: 0.65
+  wind_availability_multiplier: 0.65
+

@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hungary-2050-power-system-planner"
+version = "0.1.0"
+description = "A transparent PyPSA capacity-expansion and reliability study for a synthetic Hungary 2050 power system."
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = {text = "MIT"}
+authors = [
+  {name = "Project author"}
+]
+keywords = ["energy-system", "capacity-expansion", "pypsa", "highs", "hungary", "optimization"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = [
+  "highspy==1.15.1",
+  "matplotlib==3.11.1",
+  "numpy>=2.0,<3.0",
+  "pandas>=2.2,<3.1",
+  "pypsa==1.2.4",
+  "PyYAML>=6.0,<7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==9.1.1",
+  "pytest-cov>=6.0,<8.0",
+]
+
+[project.scripts]
+hungary2050 = "hungary2050.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers -p no:cacheprovider"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["hungary2050"]
+branch = true

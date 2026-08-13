@@ -1,0 +1,12 @@
+scenario:
+  name: Major generator outage
+  slug: major-outage
+  description: Reliability stress test with 75 percent of nuclear output unavailable for a two-week winter period.
+
+model:
+  outage:
+    technology: nuclear
+    start: "2021-01-11 00:00:00"
+    duration_hours: 336
+    available_fraction: 0.25
+
