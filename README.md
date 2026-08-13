@@ -5,7 +5,7 @@
 [![PyPSA](https://img.shields.io/badge/model-PyPSA-3B7EA1.svg)](https://pypsa.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A transparent, reproducible capacity-expansion and hourly-dispatch study for a
+A transparent, reproducible capacity expansion and hourly dispatch study for a
 stylized Hungary 2050 electricity system. It demonstrates the numerical ideas
 behind long-term power-system planning: investment, dispatch, storage,
 operational emissions, imports, renewable curtailment, reliability, and stress
@@ -38,7 +38,7 @@ The repository runs six YAML-defined scenarios:
 
 | Scenario | Change from shared assumptions | Question tested |
 |---|---|---|
-| Baseline | None | What is the reference least-cost mix? |
+| Baseline | None | What is the reference least cost mix? |
 | Low-carbon 2050 | 1 Mt operational CO2 cap; higher renewable/storage limits | How does a binding emissions budget change investment and dispatch? |
 | High electricity demand | Demand +30% | Can the allowed system serve strong electrification? |
 | Low wind and solar availability | Both capacity-factor series -35% | How sensitive is planning to a uniform renewable-resource stress? |
